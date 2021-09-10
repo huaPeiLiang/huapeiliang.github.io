@@ -5,6 +5,6 @@ type: about
 
 # 联系方式
 
-### WeChat：
+### Email：martin.hua@foxmail.com
 
-### Phone：
+### Phone：13057627662
