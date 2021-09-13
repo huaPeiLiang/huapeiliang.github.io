@@ -36,7 +36,7 @@ getLargestPoolSize() | int | 返回池中曾经同时存在的最大线程数。
 getMaximumPoolSize() | int | 返回允许的最大线程数。
 getPoolSize() | int | 返回池中的当前线程数。
 getQueue() | BlockingQueue<Runnable> | 返回此执行程序使用的任务队列。
-getRejectedExecutionHandler() | RejectedExecutionHandler | 返回无法执行任务的当前处理程序。
+getRejectedExecution-Handler() | RejectedExecutionHandler | 返回无法执行任务的当前处理程序。
 getTaskCount() | long | 返回计划执行的任务总数。
 getThreadFactory() | ThreadFactory | 返回用于创建新线程的线程工厂。
 prestartAllCoreThreads() | int | 启动所有核心线程，使它们空闲地等待工作。
@@ -44,5 +44,5 @@ prestartCoreThread() | boolean | 启动一个核心线程，使其闲置地等�
 setCorePoolSize(int corePoolSize) | void | 设置核心线程数。
 setKeepAliveTime(long time, TimeUnit unit) | void | 设置线程在终止之前可能保持空闲的时间限制。
 setMaximumPoolSize(int maximumPoolSize)| void | 设置允许的最大线程数。
-setRejectedExecutionHandler(RejectedExecutionHandler handler) | void | 为无法执行的任务设置新的处理程序。
+setRejectedExecution-Handler(RejectedExecutionHandler handler) | void | 为无法执行的任务设置新的处理程序。
 setThreadFactory(ThreadFactory threadFactory) | void | 设置用于创建新线程的线程工厂。
