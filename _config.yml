@@ -79,7 +79,7 @@ plugins:
 favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Jekyll, NexT"
+keywords: "Jekyll, Martin"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -87,7 +87,7 @@ keywords: "Jekyll, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2018
 
 # icon between year and author @Footer
 authoricon: heart
@@ -232,7 +232,7 @@ social_icons:
   Weibo: weibo
 
 
-# Sidebar Avatar
+# 侧边栏头像
 # in directory: /assets/images/avatar.gif
 #avatar:
 
@@ -241,10 +241,10 @@ social_icons:
 toc:
   enable: true
 
-  # Automatically add list number to toc.
+  # 自动将列表编号添加到 toc
   number: true
 
-  # If true, all words will placed on next lines if header width longer then sidebar width.
+  # 如果为 true，如果标题宽度大于侧边栏宽度，则所有单词都将放在下一行。
   wrap: false
 
 
@@ -275,7 +275,7 @@ sidebar:
   offset_float: 0
 
   # Back to top in sidebar
-  b2t: true
+  b2t: false
 
   # Scroll percent label in b2t button
   scrollpercent: false
@@ -293,13 +293,13 @@ sidebar:
 # Post Settings
 # ---------------------------------------------------------------
 
-# Automatically scroll page to section which is under <!-- more --> mark.
+# 自动将页面滚动到 <!-- more --> 标记下的部分
 scroll_to_more: true
 
-# Automatically saving scroll position on each post/page in cookies.
+# 在 cookie 中自动保存每个帖子页上的滚动位置。
 save_scroll: false
 
-# Automatically excerpt description in homepage as preamble text.
+# 自动摘录主页中的描述作为序言文本。
 excerpt_description: true
 
 # Automatically Excerpt. Not recommend.
