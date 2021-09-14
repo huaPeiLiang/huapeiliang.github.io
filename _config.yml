@@ -214,8 +214,8 @@ font:
  #社交链接
  # Key 是显示给最终用户的链接标签。
  #值为目标链接（例如 GitHub：https://github.com/iissnan）
-#social:
-  #LinkLabel: Link
+social:
+  GitHub: https://github.com/huaPeiLiang
 
 
 #社交链接图标
