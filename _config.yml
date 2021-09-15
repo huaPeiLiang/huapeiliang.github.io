@@ -233,8 +233,8 @@ social_icons:
 
 
 # 侧边栏头像
- in directory: /assets/images/avatar.svg
-#avatar:
+#in directory: /assets/images/avatar.svg
+avatar: /assets/images/avatar.svg
 
 
 # 侧边栏中的目录
