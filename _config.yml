@@ -76,7 +76,7 @@ plugins:
 # ---------------------------------------------------------------
 
 # 将您的 favicon.ico 放入 `assets/` 目录
-favicon: /assets/favicon.ico
+favicon: /assets/favicon.svg
 
 # 设置默认关键字（用逗号分隔）
 keywords: "Jekyll, Martin"
