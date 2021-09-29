@@ -1,6 +1,6 @@
 ---
-title: Stream项目-Gateway及灰度发布
-description: 本篇文章将介绍：需求分析、Nacos请求隔离、Gateway配置示例、匹配规则、自定义拦截器、灰度发布
+title: Stream 项目 - Gateway 及灰度发布
+description: 本篇文章将介绍：需求分析、Nacos 请求隔离、Gateway 配置示例、匹配规则、自定义拦截器、灰度发布
 categories:
 - 架构之路
 ---
@@ -9,19 +9,19 @@ categories:
 
 ## 需求分析
 
-- 开发阶段大家服务全部注册到开发环境的nacos，需要避免请求被别人截获。
+- 开发阶段大家服务全部注册到开发环境的 nacos，需要避免请求被别人截获。
 - 正式上线后，每次的迭代版本不能直接让所有用户切换过来。
 
-## Nacos请求隔离
+## Nacos 请求隔离
 
-通过feign进行服务间调用时，可以借助nacos的服务名进行请求隔离。在每个服务的配置文件中都加上版本号。
+通过 feign 进行服务间调用时，可以借助 nacos 的服务名进行请求隔离。在每个服务的配置文件中都加上版本号。
 
 ```
 VERSION=
 spring.application.name=xxx-${VERSION}
 ```
 
-以IntelliJ Idea为例，在"Environment variables"环境变量里添加VERSION值：
+以 IntelliJ Idea 为例，在"Environment variables"环境变量里添加 VERSION 值：
 
 ```
 VERSION=hpl
@@ -29,7 +29,7 @@ VERSION=hpl
 
 这样每次服务间调用只会转发到自己的服务上。
 
-## Gateway配置示例
+## Gateway 配置示例
 
 ```
 spring:
@@ -60,7 +60,7 @@ spring:
 
 **The Cookie Route Predicate Factory**
 
-根据指定cookie参数进行匹配
+根据指定 cookie 参数进行匹配
 ```
 spring:
   cloud:
@@ -74,7 +74,7 @@ spring:
 
 **The Header Route Predicate Factory**
 
-根据指定header参数进行匹配
+根据指定 header 参数进行匹配
 ```
 spring:
   cloud:
@@ -88,7 +88,7 @@ spring:
 
 **The Host Route Predicate Factory**
 
-根据Host规则进行匹配
+根据 Host 规则进行匹配
 ```
 spring:
   cloud:
@@ -102,7 +102,7 @@ spring:
 
 **The Method Route Predicate Factory**
 
-根据Method规则进行匹配
+根据 Method 规则进行匹配
 ```
 spring:
   cloud:
@@ -148,7 +148,7 @@ spring:
 
 ## 自定义拦截器
 
-自定义一个拦截器，通过getOrder方法设置它的执行顺序，filter方法里写具体的处理逻辑。
+自定义一个拦截器，通过 getOrder 方法设置它的执行顺序，filter 方法里写具体的处理逻辑。
 ```
 @Component
 public class GrayFilter implements GlobalFilter, Ordered {
@@ -183,12 +183,12 @@ public class GrayFilterConfiguration {
 
 定义好路由规则和拦截器，然后就可以在拦截器中实现根据版本号进行路由转发。
 
-在项目的配置文件中配置nacos元数据信息：
+在项目的配置文件中配置 nacos 元数据信息：
 ```
 spring.cloud.nacos.discovery.metadata.Version=${VERSION}
 ```
 
-gateway中获取项目的元数据信息，根据元数据中的Version进行请求转发：
+gateway 中获取项目的元数据信息，根据元数据中的 Version 进行请求转发：
 ```
 private Response<ServiceInstance> getServiceInstanceResponseByVersion(List<ServiceInstance> instances, HttpHeaders headers) {
         String versionNo = headers.getFirst("Version");
@@ -211,7 +211,7 @@ private Response<ServiceInstance> getServiceInstanceResponseByVersion(List<Servi
     }
 ```
 
-前端只需要在请求的header中添加"Version"参数，就可以转发到对应的服务上。
+前端只需要在请求的 header 中添加"Version"参数，就可以转发到对应的服务上。
 
 
 
