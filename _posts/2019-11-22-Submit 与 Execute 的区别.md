@@ -1,13 +1,13 @@
 ---
-title: 线程池方法Submit与Execute的区别
-description: 本篇文章将介绍：Submit与Execute方法接收的任务类型、返回值、异常之间的区别，以及造成这一区别的原因（Runnable与Callable）
+title: 线程池方法 Submit 与 Execute 的区别
+description: 本篇文章将介绍：Submit 与 Execute 方法接收的任务类型、返回值、异常之间的区别，以及造成这一区别的原因（Runnable 与 Callable）
 categories:
  - 多线程编程
 ---
 
 > 不积跬步，无以至千里。不积小流，无以成江海。
 
-## submit与execute区别
+## submit 与 execute区别
 
 
 ```
@@ -58,17 +58,17 @@ public <T> Future<T> submit(Callable<T> task) {
 ```
 
 **任务类型：**
-execute只能接受Runnable类型的任务，submit可以接受Runnable、Callable类型的任务。
+execute 只能接受 Runnable 类型的任务，submit 可以接受 Runnable、Callable 类型的任务。
 
 **返回值：**
-execute没有返回值，submit有返回值。但接受Runnable任务时返回值均为void，所以使用Future的get()获得的还是null。
+execute 没有返回值，submit 有返回值。但接受 Runnable 任务时返回值均为 void，所以使用 Future 的 get() 获得的还是 null。
 
 **异常：**
-execute中的是Runnable接口的实现，所以只能使用try、catch来捕获CheckedException，通过实现UncaughtExceptionHande接口处理UncheckedException。
+execute 中的是 Runnable 接口的实现，所以只能使用 try、catch 来捕获 CheckedException，通过实现 UncaughtExceptionHande 接口处理UncheckedException。
 
-submit中不管提交的是Runnable还是Callable类型的任务，如果不对返回值Future调用get()方法，都会吃掉异常。
+submit 中不管提交的是 Runnable 还是 Callable 类型的任务，如果不对返回值 Future 调用 get() 方法，都会吃掉异常。
 
-## Runnable与Callable区别
+## Runnable 与 Callable 区别
 
 ```
 源码：
@@ -86,19 +86,19 @@ public interface Callable<V> {
 }
 ```
 
-Callable拥有返回值且能够抛出Exception异常，所以不管是CheckedException还是UncheckedException，直接抛出即可。下面示例演示了如何创建并执行Callable类型的任务。
+Callable 拥有返回值且能够抛出 Exception 异常，所以不管是 CheckedException 还是 UncheckedException，直接抛出即可。下面示例演示了如何创建并执行Callable类型的任务。
 
 
 ```
 示例：
-// 创建Callable实例
+// 创建 Callable 实例
 class CallableTask implements Callable<Boolean>{
     public Boolean call() throws Exception {
         return false;
     }
 } 
 
-// 执行Callable实例
+// 执行 Callable 实例
 Future<Boolean> future = executor.submit(new CallableTask());
 try {
     future.get();

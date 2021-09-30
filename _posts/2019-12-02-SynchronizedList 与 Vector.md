@@ -1,20 +1,20 @@
 ---
-title: SynchronizedList与Vector
-description: 本篇文章将介绍：线程安全的集合SynchronizedList与Vector，以及使用示例
+title: SynchronizedList 与 Vector
+description: 本篇文章将介绍：线程安全的集合 SynchronizedList 与 Vector，以及使用示例
 categories:
  - 多线程编程
 ---
 
 > 不积跬步，无以至千里。不积小流，无以成江海。
 
-## SynchronizedList与Vector区别
-1、Vector扩容为原来的2倍长度，ArrayList扩容为原来1.5倍。
+## SynchronizedList 与 Vector 区别
+1、Vector 扩容为原来的2倍长度，ArrayList 扩容为原来1.5倍。
 
-2、SynchronizedList有很好的扩展和兼容功能。他可以将所有的List的子类转成线程安全的类。
+2、SynchronizedList 有很好的扩展和兼容功能。他可以将所有的 List 的子类转成线程安全的类。
 
-3、使用SynchronizedList的时候，进行遍历时要手动进行同步处理。
+3、使用 SynchronizedList 的时候，进行遍历时要手动进行同步处理。
 
-4、SynchronizedList可以指定锁定的对象。
+4、SynchronizedList 可以指定锁定的对象。
 
 **关于第三点的详细说明：**
 
@@ -28,7 +28,7 @@ List list = Collections.synchronizedList(new ArrayList());
           foo(i.next());
   }
 ```
-打开源码可以看到，Collections.synchronizedList并没有对Iterator<E> iterator();方法加锁，所以该方法不是线程安全的，如果要遍历，还是必须要在外面加一层锁。
+打开源码可以看到，Collections.synchronizedList 并没有对 Iterator<E> iterator(); 方法加锁，所以该方法不是线程安全的，如果要遍历，还是必须要在外面加一层锁。
 
 ## 示例
 
