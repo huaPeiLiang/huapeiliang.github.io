@@ -216,6 +216,7 @@ font:
  #值为目标链接（例如 GitHub：https://github.com/iissnan）
 social:
   GitHub: https://github.com/huaPeiLiang
+  LeetCode: https://leetcode-cn.com/u/martin-hua/
 
 
 #社交链接图标
@@ -230,6 +231,7 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
+  LeetCode: /assets/images/leetcode.svg
 
 
 # 侧边栏头像
