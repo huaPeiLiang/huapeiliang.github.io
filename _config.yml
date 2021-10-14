@@ -231,7 +231,7 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
-  LeetCode: /assets/images/leetcode.svg
+  LeetCode: arrow-left
 
 
 # 侧边栏头像
