@@ -5,7 +5,7 @@ function paginatorHelper(options) {
 
   var current = options.current || 0;
   var total = options.total || 1;
-  var endSize = options.hasOwnProperty('end_size') ? +options.end_size : 1;
+  var endSize = options.hasOwnProperty('end_size') ? +options.end_size : 2;
   var midSize = options.hasOwnProperty('mid_size') ? +options.mid_size : 2;
   var space = options.hasOwnProperty('space') ? options.space : '&hellip;';
   var base = options.base || '';
@@ -29,26 +29,27 @@ function paginatorHelper(options) {
   }
 
   function pageLink(i) {
+    console.log('页数',i);
     return '<a class="page-number" href="' + link(i) + '">' +
       (transform ? transform(i) : i) +
       '</a>';
   }
 
-  // Display the link to the previous page
+  // Display the link to the previous page（显示上一页的链接）
   if (prevNext && current > 1) {
     result += '<a class="extend prev" rel="prev" href="' + link(current - 1) + '">' + prevText + '</a>';
   }
 
   if (options.show_all) {
-    // Display pages on the left side of the current page
+    // Display pages on the left side of the current page（在当前页面左侧显示页面）
     for (i = 1; i < current; i++) {
       result += pageLink(i);
     }
 
-    // Display the current page
+    // Display the current page（显示当前页面）
     result += currentPage;
 
-    // Display pages on the right side of the current page
+    // Display pages on the right side of the current page（在当前页面右侧显示页面）
     for (i = current + 1; i <= total; i++) {
       result += pageLink(i);
     }
@@ -59,6 +60,11 @@ function paginatorHelper(options) {
     var leftMid = current - midSize <= endSize ? current - midSize + endSize : current - midSize;
     var rightMid = current + midSize + endSize > total ? current + midSize - endSize : current + midSize;
     var spaceHtml = '<span class="space">' + space + '</span>';
+    console.log('leftEnd:',leftEnd);
+    console.log('rightEnd:',rightEnd);
+    console.log('leftMid:',leftMid);
+    console.log('rightMid:',rightMid);
+    console.log('spaceHtml:',spaceHtml);
 
     // Display pages on the left edge
     for (i = 1; i <= leftEnd; i++) {
