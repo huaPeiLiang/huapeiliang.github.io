@@ -3,44 +3,29 @@ layout: page
 type: about
 ---
 
-[comment]: <> (1997年在江苏泰州的一个村落破壳🐣，祖辈姓花，培字辈，名亮。)
+#### 程序员：
 
-[comment]: <> (一个默默无闻的搬砖工人👷，去码头整点薯条🍟的路上，意外的发现🔍了编程的美丽。对世界🌍美好有极度的向往，理想主义和现实主义的结合。喜欢摄影📷、看书📖、编程⌨️、旅游🚶、天文🔭。)
+&emsp; 兼顾架构设计并奔赴代码一线的开发人员。
 
-[comment]: <> (从2016年开始从事Java开发工作，2018年接触架构方面的工作。)
+#### 开源分享：
 
-[comment]: <> (📷：最喜欢人文摄影)
+&emsp; [【 2020年 fast-cloud 】：基于 spring cloud 的多种微服务解决方案](https://github.com/huaPeiLiang/fast-cloud)
 
-[comment]: <> (📖：最喜欢推理类书籍，最喜欢的作者是东野圭吾)
+&emsp; [【 2018年 spring-cloud-start 】：各个 spring cloud 组件、中间件的集成与应用](https://github.com/huaPeiLiang/spring-cloud-start)
 
-[comment]: <> (⌨️：最喜欢的框架是spring boot)
+#### Leet Code 解题选手：
 
-[comment]: <> (🚶：最向往的地方是西藏)
+&emsp; [【 Leet Code 】：持续分享解题思路](https://leetcode-cn.com/u/martin-hua/)
 
-[comment]: <> (🔭：最喜欢类星体，想体验一次失重)
+#### 技术写作：
 
-程序员：
+- [多线程编程](https://huapeiliang.github.io/category/#/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B)：线程池介绍、线程安全的集合对象、线程间通信、Atomic 类、Fork Join、分布式锁和同步器 等等。
 
-  兼顾架构设计并奔赴代码一线的开发人员。
+- [Redis](https://huapeiliang.github.io/category/#/Redis)：数据结构（字典、链表、跳跃表、缩列表...）、内存回收、对象共享、事务实现、WATCH 实现、慢查询、缓存击穿 等等。
 
-开源分享：
-  
-  2020年 fast-cloud：基于 spring cloud 的多种微服务解决方案。
+- [架构心得](https://huapeiliang.github.io/category/#/%E6%9E%B6%E6%9E%84%E4%B9%8B%E8%B7%AF)：spring boot、服务发现与注册、分布式事务、数据隔离、权限模型、分布式日志、灰度发布 等等。
 
-  2018年 spring-cloud-start：各个 spring cloud 组件、中间件的集成与应用。
+- [Golang](https://huapeiliang.github.io/category/#/Golang)：Hello World、变量声明、条件和循环、块和作用域、包、函数、数组和切片 等等。
 
-Leet Code 解题选手：
+- [JVM](https://huapeiliang.github.io/category/#/JVM)：G1（分区、停顿预测模型...）、内存分配、类加载、GC（新生代、混合、Full）、语法糖、HotSpot 即时编译器 等等。
 
-  持续分享解题思路。
-
-技术写作：
-
-  多线程编程：线程池介绍、线程安全的集合对象、线程间通信、Atomic 类、Fork Join、分布式锁和同步器 等等。
-
-  Redis：数据结构（字典、链表、跳跃表、缩列表...）、内存回收、对象共享、事务实现、WATCH 实现、慢查询、缓存击穿 等等。
-
-  架构心得：spring boot、服务发现与注册、分布式事务、数据隔离、权限模型、分布式日志、灰度发布 等等。
-
-  Golang：Hello World、变量声明、条件和循环、块和作用域、包、函数、数组和切片 等等。
-
-  JVM：G1（分区、停顿预测模型...）、内存分配、类加载、GC（新生代、混合、Full）、语法糖、HotSpot 即时编译器 等等。
