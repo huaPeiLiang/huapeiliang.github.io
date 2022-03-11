@@ -2,7 +2,7 @@
 title: SynchronizedList 与 Vector
 description: 本篇文章将介绍：线程安全的集合 SynchronizedList 与 Vector，以及使用示例
 categories:
- - 多线程编程
+ - Concurrent Programming
 ---
 
 > 不积跬步，无以至千里。不积小流，无以成江海。

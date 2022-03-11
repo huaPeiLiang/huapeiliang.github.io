@@ -3,7 +3,7 @@ title: ForkJoinPool 的关闭
 
 description: 本篇文章将介绍：关键的 terminate 变量、shutdown() 与 shutdownNow()
 categories:
- - 多线程编程
+ - Concurrent Programming
 ---
 
 > 不积跬步，无以至千里。不积小流，无以成江海。

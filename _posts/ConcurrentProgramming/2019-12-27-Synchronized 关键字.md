@@ -2,7 +2,7 @@
 title: Synchronized 关键字
 description: 本篇文章将介绍：锁的实现分类、锁的几个概念（可重入性、锁的征用与调度、锁的粒度）
 categories:
- - 多线程编程
+ - Concurrent Programming
 ---
 
 > 不积跬步，无以至千里。不积小流，无以成江海。

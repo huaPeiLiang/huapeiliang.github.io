@@ -2,7 +2,7 @@
 title: ThreadLocal、InheritableThreadLocal
 description: 本篇文章将介绍：ThreadLocal、InheritableThreadLocal获取线程属性
 categories:
- - 多线程编程
+ - Concurrent Programming
 ---
 
 > 不积跬步，无以至千里。不积小流，无以成江海。

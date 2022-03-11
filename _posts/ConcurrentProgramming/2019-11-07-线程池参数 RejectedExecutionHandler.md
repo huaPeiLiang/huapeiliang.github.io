@@ -2,7 +2,7 @@
 title: 线程池参数 RejectedExecutionHandler
 description: 本篇文章将介绍：AbortPolicy、DiscardPolicy、DiscardOldestPolicy、CallerRunsPolicy、自定义拒绝策略
 categories:
- - 多线程编程
+ - Concurrent Programming
 ---
 
 > 不积跬步，无以至千里。不积小流，无以成江海。

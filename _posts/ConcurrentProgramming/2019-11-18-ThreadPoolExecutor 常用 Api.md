@@ -2,7 +2,7 @@
 title: ThreadPoolExecutor常用Api
 description: 本篇文章将介绍：ThreadPoolExecutor 类的常用方法（shutdown()、shutdownNow()、awaitTermination(long timeout,TimeUnit unit)、execute(Runnable command)...）
 categories:
- - 多线程编程
+ - Concurrent Programming
 ---
 
 > 不积跬步，无以至千里。不积小流，无以成江海。

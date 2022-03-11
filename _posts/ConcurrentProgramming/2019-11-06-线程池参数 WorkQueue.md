@@ -2,7 +2,7 @@
 title: 线程池参数 WorkQueue
 description: 本篇文章将介绍：ArrayBlockingQueue、LinkedBlockingQueue、SynchronousQueue、PriorityBlockingQueue
 categories:
- - 多线程编程
+ - Concurrent Programming
 ---
 
 > 不积跬步，无以至千里。不积小流，无以成江海。

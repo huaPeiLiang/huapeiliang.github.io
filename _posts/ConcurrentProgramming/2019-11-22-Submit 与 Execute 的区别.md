@@ -2,7 +2,7 @@
 title: 线程池方法 Submit 与 Execute 的区别
 description: 本篇文章将介绍：Submit 与 Execute 方法接收的任务类型、返回值、异常之间的区别，以及造成这一区别的原因（Runnable 与 Callable）
 categories:
- - 多线程编程
+ - Concurrent Programming
 ---
 
 > 不积跬步，无以至千里。不积小流，无以成江海。

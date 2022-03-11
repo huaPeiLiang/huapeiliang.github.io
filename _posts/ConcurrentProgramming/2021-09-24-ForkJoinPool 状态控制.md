@@ -3,7 +3,7 @@ title: ForkJoinPool 状态控制
 
 description: 本篇文章将介绍：状态变量 ctl 解析及它的五个部分、阻塞栈 Treiber Stack、ctl 变量的初始值、ForkJoinWorkThread 状态与个数分析
 categories:
- - 多线程编程
+ - Concurrent Programming
 ---
 
 > 不积跬步，无以至千里。不积小流，无以成江海。
