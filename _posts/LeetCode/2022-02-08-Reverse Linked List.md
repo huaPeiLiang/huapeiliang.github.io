@@ -1,6 +1,6 @@
 ---
-title: Leet Code 反转链表
-description: 本篇文章将介绍：题目描述、分析、图解、代码
+title: Reverse Linked List
+description: 本篇文章将介绍：使用两个指针 pre、next，循环链表将当前节点的 next 指向 pre，时间复杂度 O(n)。
 categories:
 - Leet Code
 ---

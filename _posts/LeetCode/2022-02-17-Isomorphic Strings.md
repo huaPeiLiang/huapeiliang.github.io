@@ -1,6 +1,6 @@
 ---
-title: Leet Code 同构字符串
-description: 本篇文章将介绍：题目描述、分析、图解、代码
+title: Isomorphic Strings
+description: 本篇文章将介绍：保证字符串 s 和 t 的字符一一对应，即字符串 s 和 t 为同构字符串。使用两个哈希表来维护字符对应关系，时间复杂度 O(n)。
 categories:
 - Leet Code
 ---

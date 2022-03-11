@@ -1,6 +1,6 @@
 ---
-title: Leet Code 存在重复元素
-description: 本篇文章将介绍：题目描述、分析、图解、代码
+title: Contains Duplicate
+description: 本篇文章将介绍：使用排序和循环进行两两比较，时间复杂度 O(n)。
 categories:
 - Leet Code
 ---
